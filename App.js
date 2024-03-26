@@ -5,6 +5,7 @@ import Login from './src/screens/Login';
 import Inicial from './src/screens/inicial';
 import Cadastro from './src/screens/Cadastro';
 import Home from './src/screens/Home';
+import ResetPass from './src/screens/ResetPass';
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ function MyStack() {
       <Stack.Screen name="Inicial" component={Inicial} options={{ headerShown: false }} />
       <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
       <Stack.Screen name="Cadastro" component={Cadastro} options={{ headerShown: false }} />
+      <Stack.Screen name="RedefinirSenha" component={ResetPass} options={{ headerShown: false }} />
       <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
